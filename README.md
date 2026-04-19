@@ -16,7 +16,7 @@ If you are looking for a reliable **USB malware scanner** that doesn't consume h
 
 This tool requires Windows (due to WMI dependency) and Python 3.8+.
 
-```bash
+bash
 pip install -r requirements.txt
 
 ## 📥 Getting Signature Updates (การอัปเดตฐานข้อมูลไวรัส)
