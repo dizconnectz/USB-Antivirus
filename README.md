@@ -20,7 +20,7 @@ This tool requires Windows (due to WMI dependency) and Python 3.8+:
 
 ---
 
-## 📥 Getting Signature Updates (การอัปเดตฐานข้อมูลไวรัส)
+## 📥 Getting Signature Updates
 
 To make this the best antivirus for USB, you need an up-to-date virus signature database.
 
@@ -34,27 +34,24 @@ To make this the best antivirus for USB, you need an up-to-date virus signature 
 
 ---
 
-## 💻 Usage (วิธีใช้งาน)
+## 💻 Usage
 
-### 1. Real-Time Monitor Mode / โหมดเฝ้าระวัง (Default)
-Run the script to start watching for any USB insertions.  
-รันสคริปต์ทิ้งไว้ โปรแกรมจะเฝ้ารอ เมื่อมี USB เสียบเข้ามาจะสแกนอัตโนมัติ:
+### 1. Real-Time Monitor Mode (Default)
+Run the script to start watching for any USB insertions:
 
     python takuma_usb.py
 
 ---
 
-### 2. Manual Scan Mode / โหมดสแกนแบบระบุไดรฟ์
-Scan a specific drive letter and exit.  
-สแกน drive ที่ระบุทันทีแล้วจบการทำงาน (ตัวอย่าง: สแกนไดรฟ์ E:):
+### 2. Manual Scan Mode
+Scan a specific drive letter and exit (example: drive E:):
 
     python takuma_usb.py --scan E:\
 
 ---
 
-### 3. Custom Signature File / โหมดระบุไฟล์ Database
-Specify a custom ClamAV `.hdb` file.  
-ระบุที่อยู่ไฟล์ Database (.hdb) เอง:
+### 3. Custom Signature File / Database
+Specify a custom ClamAV `.hdb` file:
 
     python takuma_usb.py --sig custom_database.hdb
 
